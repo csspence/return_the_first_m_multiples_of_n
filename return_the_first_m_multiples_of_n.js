@@ -10,6 +10,11 @@ should return
 [5.0, 10.0, 15.0]
 */
 
-function multiples(m, n){
-  // code here
+const multiples = (m, n) => {
+  const array = [];
+  for(let i = 1; i < m+1; i++) {
+    array.push(n * i);
+  }
+
+  return array;
 }
